@@ -1,0 +1,10 @@
+C:\Git\DesignPatterns\Strategy\obj\Debug\netcoreapp2.0\Strategy.csproj.CoreCompileInputs.cache
+C:\Git\DesignPatterns\Strategy\obj\Debug\netcoreapp2.0\Strategy.AssemblyInfoInputs.cache
+C:\Git\DesignPatterns\Strategy\obj\Debug\netcoreapp2.0\Strategy.AssemblyInfo.cs
+C:\Git\DesignPatterns\Strategy\bin\Debug\netcoreapp2.0\Strategy.deps.json
+C:\Git\DesignPatterns\Strategy\bin\Debug\netcoreapp2.0\Strategy.runtimeconfig.json
+C:\Git\DesignPatterns\Strategy\bin\Debug\netcoreapp2.0\Strategy.runtimeconfig.dev.json
+C:\Git\DesignPatterns\Strategy\bin\Debug\netcoreapp2.0\Strategy.dll
+C:\Git\DesignPatterns\Strategy\bin\Debug\netcoreapp2.0\Strategy.pdb
+C:\Git\DesignPatterns\Strategy\obj\Debug\netcoreapp2.0\Strategy.dll
+C:\Git\DesignPatterns\Strategy\obj\Debug\netcoreapp2.0\Strategy.pdb
