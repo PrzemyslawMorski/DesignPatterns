@@ -6,10 +6,15 @@ namespace Strategy
     {
         static void Main(string[] args)
         {
-            var dog = new Dog();
-            System.Console.WriteLine(dog.Sound);
-            var bird = new Bird();
-            var animal = new Animal();
+            var sparky = new Dog();
+            var tweety = new Bird();
+
+            System.Console.WriteLine("Sparky: " + sparky.TryToFly());
+            System.Console.WriteLine("Tweety: " + tweety.TryToFly());
+
+            sparky.FlyingType = new ItFlys();
+
+            System.Console.WriteLine("Sparky: " + sparky.TryToFly());
         }
     }
 }

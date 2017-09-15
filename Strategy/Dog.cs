@@ -1,12 +1,16 @@
-namespace Strategy {
-    public class Dog : Animal {
-        public void digHole () {
-            System.Console.WriteLine ("Dug a hole");
+namespace Strategy
+{
+    public class Dog : Animal
+    {
+        public void digHole()
+        {
+            System.Console.WriteLine("Dug a hole");
         }
 
-        public Dog () {
-            this.Sound = "Bark";
+        public Dog()
+        {
+            Sound = "Bark";
+            FlyingType = new CantFly();
         }
-
     }
 }
