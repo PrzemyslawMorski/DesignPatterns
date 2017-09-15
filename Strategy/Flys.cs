@@ -21,4 +21,19 @@ namespace Strategy
         }
     }
 
+        public class FliesSuperFast : Flys
+    {
+        public string Fly()
+        {
+            return "Flying hella fast";
+        }
+    }
+        public class FliesWithWings : Flys
+    {
+        public string Fly()
+        {
+            return "Flies with wings";
+        }
+    }
+
 }
