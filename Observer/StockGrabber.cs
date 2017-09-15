@@ -31,7 +31,12 @@ namespace Observer
 
         public void Unregister(IObserver observer)
         {
-            observers.Remove(observer);
+            int observerIndex = observers.IndexOf(observer);
+            if (observerIndex != -1)
+            {
+                observers.Remove(observer);
+                System.Console.WriteLine("Observer {0} removed.", observerIndex);
+            }
         }
     }
 }

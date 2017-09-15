@@ -1,3 +1,5 @@
+using System;
+
 namespace Observer
 {
     public class StockObserver : IObserver
@@ -13,6 +15,7 @@ namespace Observer
         public StockObserver()
         {
             ObserverId = ObserverIdTracker++;
+            System.Console.WriteLine("New observer with id: {0}", ObserverId);
         }
 
         public void Update(double ibmPrice, double aaplPrice, double googPrice)
@@ -20,6 +23,13 @@ namespace Observer
             this.GoogPrice = googPrice;
             this.AaplPrice = aaplPrice;
             this.IbmPrice = ibmPrice;
+
+            printPrices();
+        }
+
+        private void printPrices()
+        {
+            System.Console.WriteLine("{0} IBM: {1} AAPL: {2} GOOG: {3}", ObserverId, IbmPrice, AaplPrice, GoogPrice);
         }
     }
 }
