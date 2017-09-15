@@ -1,11 +1,11 @@
 namespace Strategy
 {
-    public interface Flys
+    public interface IFlys
     {
         string Fly();
     }
 
-    public class ItFlys : Flys
+    public class ItFlys : IFlys
     {
         public string Fly()
         {
@@ -13,7 +13,7 @@ namespace Strategy
         }
     }
 
-    public class CantFly : Flys
+    public class CantFly : IFlys
     {
         public string Fly()
         {
@@ -21,14 +21,14 @@ namespace Strategy
         }
     }
 
-        public class FliesSuperFast : Flys
+        public class FliesSuperFast : IFlys
     {
         public string Fly()
         {
             return "Flying hella fast";
         }
     }
-        public class FliesWithWings : Flys
+        public class FliesWithWings : IFlys
     {
         public string Fly()
         {

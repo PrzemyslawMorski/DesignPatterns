@@ -24,7 +24,7 @@ namespace Strategy
         public double Speed { get; set; }
         public string Sound { get; set; }
 
-        public Flys FlyingType {private get; set;}
+        public IFlys FlyingType {private get; set;}
 
         public string TryToFly() {
             return FlyingType.Fly();
