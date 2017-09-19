@@ -2,11 +2,11 @@ using System;
 
 namespace AbstractFactory
 {
-    public abstract class EnemyShipBuilding
+    public abstract class EnemyShipBuilding <ShipType>
     {
-        protected abstract EnemyShip MakeEnemyShip(string typeOfShip);
+        protected abstract EnemyShip MakeEnemyShip(ShipType typeOfShip);
 
-        public EnemyShip orderTheShip(string typeOfShip)
+        public EnemyShip orderTheShip(ShipType typeOfShip)
         {
             EnemyShip theEnemyShip = MakeEnemyShip(typeOfShip);
 
@@ -17,6 +17,5 @@ namespace AbstractFactory
 
             return theEnemyShip;
         }
-
     }
 }

@@ -1,0 +1,28 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Git\\DesignPatterns\\AbstractFactory\\AbstractFactory\\AbstractFactory\\AbstractFactory.csproj",
+    "projectName": "AbstractFactory",
+    "projectPath": "C:\\Git\\DesignPatterns\\AbstractFactory\\AbstractFactory\\AbstractFactory\\AbstractFactory.csproj",
+    "outputPath": "C:\\Git\\DesignPatterns\\AbstractFactory\\AbstractFactory\\AbstractFactory\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp2.0"
+    ],
+    "frameworks": {
+      "netcoreapp2.0": {
+        "projectReferences": {}
+      }
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "target": "Package",
+          "version": "2.0.0"
+        }
+      }
+    }
+  }
+}

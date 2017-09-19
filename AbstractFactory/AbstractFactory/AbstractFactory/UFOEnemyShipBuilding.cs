@@ -1,23 +1,34 @@
 ﻿namespace AbstractFactory
 {
-    public class UFOEnemyShipBuilding : EnemyShipBuilding
+    public enum ShipType
     {
-        protected override EnemyShip MakeEnemyShip(string typeOfShip)
+        Ufo,
+        UfoBoss
+    }
+
+
+    public class UFOEnemyShipBuilding : EnemyShipBuilding<ShipType>
+    {
+        protected override EnemyShip MakeEnemyShip(ShipType typeOfShip)
         {
             EnemyShip theEnemyShip = null;
 
-            if (typeOfShip.ToLower().Equals("ufo"))
+            switch (typeOfShip)
             {
-                EnemyShipFactory shipPartsFactory = new UFOEnemyShipFactory();
-                theEnemyShip = new UFOEnemyShip(shipPartsFactory);
-                theEnemyShip.Name = "Ufo Grunt Ship";
+                case ShipType.Ufo:
+                    EnemyShipFactory shipPartsFactory = new UFOEnemyShipFactory();
+                    theEnemyShip = new UFOEnemyShip(shipPartsFactory);
+                    theEnemyShip.Name = "Ufo Grunt Ship";
+                    break;
+                case ShipType.UfoBoss:
+                    shipPartsFactory = new UFOBossEnemyShipFactory();
+                    theEnemyShip = new UFOEnemyShip(shipPartsFactory);
+                    theEnemyShip.Name = "Ufo Boss Ship";
+                    break;
+                default:
+                    break;
             }
-            else if (typeOfShip.ToLower().Equals("ufo boss"))
-            {
-                EnemyShipFactory shipPartsFactory = new UFOBossEnemyShipFactory();
-                theEnemyShip = new UFOEnemyShip(shipPartsFactory);
-                theEnemyShip.Name = "Ufo Boss Ship";
-            }
+
             return theEnemyShip;
         }
     }

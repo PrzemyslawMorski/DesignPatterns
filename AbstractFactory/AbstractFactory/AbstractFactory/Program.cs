@@ -6,12 +6,12 @@ namespace AbstractFactory
     {
         private static void Main(string[] args)
         {
-            EnemyShipBuilding MakeUfos = new UFOEnemyShipBuilding();
+            EnemyShipBuilding<ShipType> MakeUfos = new UFOEnemyShipBuilding();
 
-            EnemyShip theGrunt = MakeUfos.orderTheShip("Ufo");
+            EnemyShip theGrunt = MakeUfos.orderTheShip(ShipType.Ufo);
             Console.WriteLine(theGrunt.Name);
 
-            EnemyShip theBoss = MakeUfos.orderTheShip("Ufo boss");
+            EnemyShip theBoss = MakeUfos.orderTheShip(ShipType.UfoBoss);
             Console.WriteLine(theBoss.Name);
         }
     }
