@@ -1,12 +1,21 @@
 ﻿using System;
+using System.Linq;
 
 namespace Singleton
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var scrabbleLetters = ScrabbleLetters.Instance;
+            Console.WriteLine($"Instance ID: {scrabbleLetters.GetHashCode()}");
+//            foreach (var letter in scrabbleLetters.Letters)
+//            {
+//                Console.WriteLine(letter);
+//            }
+
+            var secondInstanceScrabbleLetters = ScrabbleLetters.Instance;
+            Console.WriteLine($"Instance ID: {secondInstanceScrabbleLetters.GetHashCode()}");
         }
     }
 }
