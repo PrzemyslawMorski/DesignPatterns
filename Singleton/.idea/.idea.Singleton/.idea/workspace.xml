@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="024a411d-869f-4e2c-8279-87b7e66b0f38" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ScrabbleLetters.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.Singleton/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.Singleton/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program.cs" afterPath="$PROJECT_DIR$/Program.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Singleton.csproj" afterPath="$PROJECT_DIR$/Singleton.csproj" />
-    </list>
+    <list default="true" id="024a411d-869f-4e2c-8279-87b7e66b0f38" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,6 +81,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Builder/Builder.csproj" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -186,12 +182,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1505836579709</updated>
-      <workItem from="1505836580888" duration="1713000" />
+      <workItem from="1505836580888" duration="1946000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1713000" />
+    <option name="totallyTimeSpent" value="1946000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
